@@ -89,13 +89,15 @@ If you want cloud sync across devices/accounts:
    - `VITE_SUPABASE_URL`
    - `VITE_SUPABASE_ANON_KEY`
 4. In Supabase SQL editor, run [schema.sql](./supabase/schema.sql).
-5. Start the app and sign in with email/password.
+5. Start the app and sign in (magic link or email/password).
+6. For magic link login, in Supabase Auth settings add your local and deployed URLs to allowed redirect URLs.
 
 If env vars are missing, the app runs in local-only mode (no cloud sync).
 
 ### Cloud behavior in current phase
 
 - Transactions and budgets are loaded from Supabase after sign-in.
+- Auth panel supports magic link and password login.
 - Uploading a new CSV replaces your existing saved transactions for that user (same behavior as replacing local state in-app).
 - Updating transaction category syncs to Supabase.
 - Saving budget creates a new budget snapshot row.
