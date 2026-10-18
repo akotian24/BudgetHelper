@@ -1,0 +1,62 @@
+.budget-setup {
+  background: white;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+.budget-setup h2 { font-size: 1.3rem; font-weight: 700; margin-bottom: 1.25rem; color: #1e293b; }
+
+.budget-section { margin-bottom: 1.5rem; }
+.budget-section h3 { font-size: 0.95rem; font-weight: 600; color: #475569; margin-bottom: 0.75rem; }
+
+.optional { font-weight: 400; color: #94a3b8; font-size: 0.85rem; }
+
+.input-row {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.input-row input {
+  width: 120px;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 6px 10px;
+  font-size: 0.95rem;
+  color: #1e293b;
+  outline: none;
+  transition: border-color 0.15s;
+}
+.input-row input:focus { border-color: #3b82f6; }
+.currency { color: #64748b; font-weight: 600; }
+.unit { color: #94a3b8; font-size: 0.85rem; }
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 0.75rem;
+}
+.category-input-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  background: #f8fafc;
+  border-radius: 8px;
+  padding: 0.5rem 0.75rem;
+}
+.category-input-row label { font-size: 0.85rem; font-weight: 500; color: #475569; flex: 1; }
+.category-input-row .input-row input { width: 90px; }
+
+.save-btn {
+  margin-top: 0.5rem;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  padding: 10px 28px;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.save-btn:hover { background: #2563eb; }

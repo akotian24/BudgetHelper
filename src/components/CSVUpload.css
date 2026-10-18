@@ -1,0 +1,59 @@
+.upload-wrapper {
+  width: 100%;
+  max-width: 520px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.drop-zone {
+  border: 2px dashed #cbd5e1;
+  border-radius: 16px;
+  padding: 2.5rem 2rem;
+  text-align: center;
+  cursor: pointer;
+  background: white;
+  transition: all 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+.drop-zone:hover, .drop-zone.dragging {
+  border-color: #3b82f6;
+  background: #eff6ff;
+}
+
+.drop-icon { font-size: 2.5rem; }
+.drop-text { font-size: 1rem; font-weight: 600; color: #1e293b; }
+.drop-sub { font-size: 0.85rem; color: #94a3b8; }
+
+.upload-error {
+  color: #ef4444;
+  font-size: 0.85rem;
+  padding: 0.5rem 0.75rem;
+  background: #fef2f2;
+  border-radius: 8px;
+  border: 1px solid #fecaca;
+}
+
+.bank-hints {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1rem;
+  font-size: 0.8rem;
+  color: #64748b;
+}
+.bank-hints p { margin-bottom: 0.5rem; }
+.bank-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 0.6rem; }
+.bank-tag {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 2px 8px;
+  font-size: 0.75rem;
+  color: #475569;
+  font-weight: 500;
+}
+.hint-text { color: #94a3b8; line-height: 1.5; }

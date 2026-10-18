@@ -1,0 +1,80 @@
+.tx-list { display: flex; flex-direction: column; gap: 1rem; }
+
+.tx-filters {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+.tx-search {
+  flex: 1;
+  min-width: 200px;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 7px 12px;
+  font-size: 0.9rem;
+  outline: none;
+  background: white;
+}
+.tx-search:focus { border-color: #3b82f6; }
+.tx-select {
+  border: 1.5px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 7px 10px;
+  font-size: 0.9rem;
+  background: white;
+  outline: none;
+  cursor: pointer;
+}
+.tx-count { font-size: 0.82rem; color: #94a3b8; white-space: nowrap; margin-left: auto; }
+
+.tx-table-wrapper {
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  overflow: auto;
+}
+.tx-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+.tx-table thead tr { border-bottom: 2px solid #f1f5f9; }
+.tx-table th {
+  padding: 12px 16px;
+  text-align: left;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  white-space: nowrap;
+  user-select: none;
+}
+.tx-table th:hover { color: #475569; }
+.tx-table tbody tr { border-bottom: 1px solid #f8fafc; transition: background 0.1s; }
+.tx-table tbody tr:last-child { border-bottom: none; }
+.tx-table tbody tr:hover { background: #f8fafc; }
+.tx-table td { padding: 10px 16px; }
+
+.tx-date { color: #94a3b8; white-space: nowrap; }
+.tx-desc { max-width: 260px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-weight: 500; }
+.tx-amount { font-weight: 600; color: #ef4444; white-space: nowrap; text-align: right; }
+.tx-empty { text-align: center; color: #94a3b8; padding: 2rem !important; }
+
+.sort-icon { color: #cbd5e1; margin-left: 4px; }
+.sort-icon.active { color: #3b82f6; }
+
+.cat-select {
+  border: 1.5px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 3px 6px;
+  font-size: 0.82rem;
+  background: #f8fafc;
+  cursor: pointer;
+  outline: none;
+  color: #475569;
+  max-width: 140px;
+}
+.cat-select:focus { border-color: #3b82f6; }
